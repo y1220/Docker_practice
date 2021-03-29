@@ -1,0 +1,47 @@
+  585  git init
+  586  git remote add origin https://github.com/y1220/Docker_practice.git
+  587  git push -u origin master
+  588  git push -u origin main
+  589  git branch -M main
+  590  git add .
+  591  git commit -m "mount a folder on host"
+  592  git push
+  593  git push -u origin master
+  594  id -u
+  595  ls
+  596  mv Dockerfile.dev Dockerfile
+  597  docker build .
+  598  docker run -it -u $(id -u):$(id -g) -v ~/Desktop/mounted_folder:/created_in_run 71f bash
+  599  docker run -it -p 1234:8888 jupyter/datascience_notebook bash
+  600  docker run -it -p 1234:8888 jupyter/datascience-notebook bash
+  601  git add .
+  602  git commit -m "jupyter_notebook"
+  603  git push 
+  604  sysctl -n hw.physicalcpu_max
+  605  sysctl -n hw.logicalcpu_max
+  606  sysctl hw.memsize 
+  607  python
+  608  ipython
+  609  docker images
+  610  docker run -it 68d2e7a7723 bash
+  611  mkdir dsenv_build
+  612  ls
+  613  cd dsenv_build/
+  614  touch Dockerfile
+  615  docker build .
+  616  docker build .
+  617  cd ..
+  618  git add .
+  619  git commit -m "ANACONDA installer"
+  620  git push 
+  621  ls
+  622  cd dsenv_build/
+  623  ls
+  624  docker run -it 560c bash 
+  625  docker build .
+  626  docker run -p 8888:8888 bbae
+  627  docker run -p 1234:8888 bbae
+  628  docker run -p 8888:8888 bbae
+  629  cd ..
+  630  ls
+  631  history 

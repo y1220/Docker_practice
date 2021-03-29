@@ -1,0 +1,80 @@
+  502  mkdir docker
+  503  vscode Dockerfile
+  504  subl Dockerfile
+  505  touch Dockerfile
+  506  cd docker/
+  507  touch Dockerfile
+  508  ls
+  509  cat Dockerfile 
+  510  docker build .
+  511  docker images
+  512  docker build -t new-ubuntu:latest .
+  513  docker images
+  514  docker run -it new-ubuntu bash
+  515  docker build .
+  516  docker build .
+  517  docker images
+  518  docker run 4d61204aea9e
+  519  touch something
+  520  ls
+  521  docker build .
+  522  docker images
+  523  docker run -it ca2d4cb2bd77
+  524* 
+  525  docker build .
+  526  docker images
+  527  docker run -it ca2d4cb2bd77
+  528  docker run -it 8e558b61654f
+  529  ls
+  530  rm something
+  531  ls
+  532  mkdir sample_folder
+  533  cd sample_folder/
+  534  echo 'hello' > hello 
+  535  ls
+  536  cat hello 
+  537  ch ..
+  538  tar -cvf compressed.tar sample_folder
+  539  cd ..
+  540  tar -cvf compressed.tar sample_folder
+  541  ls
+  542  docker build .
+  543  docker build .
+  544  docker images
+  545  docker run -it --rm  109cc5f3e715  bash
+  546  ls
+  547  cd sampl
+  548  cd sample_folder/
+  549  ls
+  550  cat ../Dockerfile 
+  551  mv ../Dockerfile ../Dockerfile.dev
+  552  ls ..
+  553  docker build -f ../Dockerfile.dev  .
+  554  ls
+  555  docker images
+  556  docker build -f ../Dockerfile.dev  .
+  557* docker image
+  558  docker ps
+  559  docker run -it --rm  08fb9fa9b138  bash
+  560  docker run -it --rm  4c  bash
+  561  cd ..
+  562  ls
+  563  docker build .
+  564  docker build -f Dockerfile.dev .
+  565  docker run -it --rm 04 bash
+  566  cd ..
+  567  mkdir mounted_folder
+  568  cd mounted_folder/
+  569  touch file_at_host
+  570  echo "hello from host" > file_at_host 
+  571  cat file_at_host 
+  572  cd ..
+  573  ls
+  574  cd docker/
+  575  ls
+  576  docker build -f Dockerfile.dev .
+  577  docker run -it -v ~/Desktop/mounted_folder:/read_host_folder 7623 bash
+  578  docker run -it -v ~/Desktop/mounted_folder:/read_host_folder_dummy 7623 bash
+  579  id -u
+  580  id -g
+  581  history

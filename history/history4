@@ -1,0 +1,23 @@
+ 500  cd Desktop/
+  501  cd docker/
+  502  ls
+  503  cd dsenv_build/
+  504  ls
+  505  docker build .
+  506  docker images
+  507  docker run -p 8888:8888 8c7b
+  508  docker run -p 8888:8888 -v ~/Desktop/ds_python/:/work --name my-lab 8c7b
+  509  docker run -p 8888:8888 -v ~/Desktop/ds_python/:/work --name my-lab 8c7b
+  510* docker run -p 8888:8888 -v ~/Desktop/ds_python/:/work 
+  511  docker images
+  512  docker ps -a
+  513  docker start -p 8888:8888 -v ~/Desktop/ds_python/:/work --name my-lab 8c7b
+  514  docker build .
+  515  docker start -p 8888:8888 -v ~/Desktop/ds_python/:/work --name my-lab 8c7b
+  516  docker run -p 8888:8888 -v ~/Desktop/ds_python/:/work --name my-lab 8c7b
+  517  docker ps
+  518  docker container run -d --name my-lab  -p 8888:8888 -v ~/Desktop/ds_python/:/work
+  519  docker container run -d --name my-lab  -p 8888:8888 
+  520  docker container start my-lab 
+  521  docker stop my-lab
+  522  history
